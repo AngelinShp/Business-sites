@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>practice2</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=TpQQ0rRDRH0ayilwQZDDhz3vxE5bJazTFrbF7CC_h7ZYGDgJOqZB0uR0AZrJKoNA-mhlt760sUSAekmrXwMs-3nP_9d2UxMmiA8au_vAecOLhguj_aDvP37y-8fsOgwYa_dDX3JPVLpjmvfgojHQy1Iq6mKQu6R0i5CvI5lEqsKIre4RJMhPRdNxI0PsLpEhpFaekK6CwyCiGbqsTVpNrnwXJbwEtyKAdbUoDPnZ4ds" charset="UTF-8"></script></head>
+<body>
+	<h1>Подсчёт калорий</h1>
+	<script>
+		var products = prompt('Введите цифру с продуктом:' +
+													'\n1 – картофель – 77 ккал;' +
+													'\n2 – салат – 20 ккал;' +
+													'\n3 – мясо – 242 ккал;' +
+													'\n4 – кукуруза – 123 ккал;' +
+													'\n5 – каша гречневая – 132 ккал.', 1);
+		var mass = prompt('Введите, сколько съели в граммах:', 100);
+		switch (parseInt(products)) {
+			case 1:
+				alert('Вы съели ' + (77 * mass) / 100 + ' калорий.');
+				break;
+			case 2:
+				alert('Вы съели ' + (20 * mass) / 100 + ' калорий.');
+				break;
+			case 3:
+				alert('Вы съели ' + (240 * mass) / 100 + ' калорий.');
+				break;
+			case 4:
+				alert('Вы съели ' + (123 * mass) / 100 + ' калорий.');
+				break;
+			case 5:
+				alert('Вы съели ' + (132 * mass) / 100 + ' калорий.');
+				break;
+			default:
+			  alert('Вне разумных пределов!' );
+		}
+	</script>
+
+</body>
+</html>
