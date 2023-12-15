@@ -9,12 +9,33 @@
 			task = prompt('Что вам нужно сделать?');
 			tasks.push(task);
 		}
+        function show_tasks() {
+            alert(tasks);
+        }
+        //var timer=setInterval(sendMessage, 10000) //каждые 10 секунд
+
+        //var timer=setTimeout(sendMessage, 10000) //спустя 10 секунд после открытия
+        function sendMessage() {
+			var tasks_number = tasks.length;
+			if (tasks_number == 0) {
+				alert('Вы ничего не забыли?');
+			}
+			else {
+					alert('У вас осталось '+ tasks_number + ' задач(-а/-и)!');
+			}
+		}
+        function show_tasks_2() {
+            for (var i=0; i<tasks.length; i++) {
+                alert(tasks[i])
+            }
+        }
 	</script>
 </head>
 <body>
 	<h1>Трекер задач</h1>
 	<p><input value="Добавить задачу" onclick="add_task()" type="button"></p>
-	
+    <p><input value="Показать задачи" onclick="show_tasks_2()" type="button"></p>
+
 </body>
 </html>
 
