@@ -57,6 +57,12 @@ $('h3').click(function (){
   $('h3').append('<div style="font-weight: 200; font-size: 16px">Выполнение различных сценариев возможно только после окончания загрузки структуры документа document, когда браузер преобразует html-код страницы в дерево DOM. Управление процессом загрузки обеспечивает конструкция ready().</div>')
 });
 
+$('a').click(function () {
+   $('a').removeAttr('title');
+   $('a').attr('href', 'https://maximumtest.ru/');
+   $('a').html('Посетить сайт школы MAXIMUM Education');
+});
+
 
 
 
