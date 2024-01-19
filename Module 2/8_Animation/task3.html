@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <!-- <link href="https://getbootstrap.su/docs/5.2/assets/css/docs.css" rel="stylesheet"> -->
+  </head>
+  <style>
+
+    @keyframes runaway_ball {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        background: red;
+        transform: scale(1.5);
+      }
+      100% {
+        background: #2db34a;
+        transform: scale(1);
+      }
+    }
+    @keyframes runaway_line {
+      0% {
+        width: 10px;
+      }
+      50% {
+        width: 500px;
+      }
+      100% {
+        width: 50px;
+      }
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin: 100px 100px;
+    }
+
+    .line {
+      background: #2db34a;
+      border-radius: 50px;
+      height: 2px;
+      width: 10px;
+      animation-name: runaway_line;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .ball {
+      background: #2db34a;
+      border-radius: 50px;
+      height: 100px;
+      width: 100px;
+      animation-name: runaway_ball;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="line"></div>
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
